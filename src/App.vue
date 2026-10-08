@@ -44,6 +44,10 @@ import spiderArt from './assets/spider.webp'
     </ul>
 
     <p>
+      Coding time is calculated with <a href="https://hackatime.hackclub.com/">Hackatime!</a> Check it out, and set it up before starting!
+    </p>
+
+    <p>
       Any questions? Join <a href="https://hackclub.enterprise.slack.com/archives/C0C7N079Z2Q">#crawl</a> and <a href="https://hackclub.enterprise.slack.com/archives/C0C8CLLC6DN">#crawl-help</a> on the Slack!
     </p>
 
@@ -83,7 +87,7 @@ body {
   /* Lora for body copy: real 400-700 range, so font-weight:bold is a true
      bold. Shadows Into Light is single-weight and only legible at display
      sizes, so it's reserved for the h1 below. */
-  /* font-family: "Lora", serif; */
+  font-family: "Lora", serif;
   margin: 0;
   overflow-x: clip;
 }
@@ -166,7 +170,7 @@ hr {
   background: #ff8c1a;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  font-weight: bold;
+  
 }
 
 .cta:hover,
