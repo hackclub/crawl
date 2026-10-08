@@ -27,7 +27,7 @@ import spiderArt from './assets/spider.webp'
 
     <hr />
 
-    <p>Spend <strong>2 or more hours</strong> coding your very own web crawler, and get a <strong>$10</strong> to spend on a video game (or several) from Steam or Itch.io!</p>
+    <p>Spend <strong>2 or more hours</strong> coding your very own web crawler, and get <strong>$10</strong> to spend on a video game (or several) from Steam or Itch.io!</p>
     
     <h2>requirements</h2>
     
