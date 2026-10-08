@@ -52,7 +52,7 @@ import spiderArt from './assets/spider.webp'
     </p>
 
     <p>
-      <a href="" class="cta">submit your project</a>
+      <a href="https://forms.hackclub.com/t/pqMvL6JyMHus" class="cta">submit your project</a>
     </p>
 
     <hr />
