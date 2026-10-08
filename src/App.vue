@@ -61,6 +61,11 @@ import spiderArt from './assets/spider.webp'
 </template>
 
 <style>
+html {
+  /* everything below is in rem, so this one value scales the whole page:
+     16px on phones, growing with viewport width up to ~26px on big monitors */
+  font-size: clamp(16px, 0.6vw + 12px, 26px);
+}
 body {
   background: #14100b;
   color: #f2e8d5;
@@ -74,14 +79,14 @@ body {
   overflow-x: hidden;
 }
 .page {
-  max-width: 560px;
-  margin: 60px auto;
-  padding: 0 16px;
+  max-width: 35rem;
+  margin: 3.75rem auto;
+  padding: 0 1rem;
 }
 :root {
   /* base size of web1 (512px source); web2 is the same art at 1024px,
      so it renders at 2x this to appear identically sized */
-  --web-size: 240px;
+  --web-size: clamp(8rem, 16vw, 20rem);
   /* spider is a 256px source. Equal drawing scale with the 512px web1 would
      be 0.5; trimmed to 0.52 so the spider reads as a smaller accent. Change
      this one number to resize it and it stays tied to --web-size. */
@@ -105,19 +110,14 @@ body {
   right: 0;
   width: calc(var(--web-size) * 2);
 }
-@media (max-width: 600px) {
-  :root {
-    --web-size: 150px;
-  }
-}
 .title {
   position: relative;
   display: inline-block;
 }
 h1 {
   font-family: "Shadows Into Light", cursive;
-  font-size: 64px;
-  letter-spacing: 8px;
+  font-size: 4rem;
+  letter-spacing: 0.125em;
   margin: 0;
   color: #ff8c1a;
 }
@@ -129,9 +129,9 @@ h2 {
 
 .spider {
   position: absolute;
-  top: -34px;
+  top: calc(var(--spider-size) * -0.27);
   left: 100%;
-  margin-left: -8px;
+  margin-left: -0.5rem;
   width: var(--spider-size);
   height: auto;
   pointer-events: none;
@@ -146,13 +146,13 @@ h2 {
 hr {
   border: none;
   border-top: 1px dashed #ff8c1a;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 .cta {
   display: inline-block;
   color: #14100b;
   background: #ff8c1a;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -161,17 +161,17 @@ hr {
 .cta:focus-visible {
   text-decoration: none;
   outline: dashed #ff8c1a;
-  outline-offset: 2px;
+  outline-offset: 0.125rem;
 }
 
 footer {
-  font-size: 14px;
+  font-size: 0.875rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.5rem;
   justify-content: space-between;
   background-color: #361b03;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
 }
 
 a {
@@ -185,6 +185,6 @@ a:hover {
 footer div {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 0.75rem;
 }
 </style>

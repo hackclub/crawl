@@ -1,38 +1,31 @@
-# crawl-ysws
+# Crawl
 
-This template should help get you started developing with Vue 3 in Vite.
+The landing page for **Crawl**, a Hack Club You Ship, We Ship program: spend two or more hours building your own web crawler and get $10 toward a video game on Steam or Itch.io.
 
-## Recommended IDE Setup
+Built with Vue 3 and Vite. The page is a single static component (`src/App.vue`), with no routing or state.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Development
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Build
 
 ```sh
 npm run build
 ```
+
+Output goes to `dist/`, which any static host can serve. Preview the production build locally with `npm run preview`.
+
+## Where things live
+
+- `src/App.vue`: all page content and styles. Sizes are in `rem`, so the whole page scales with the root `font-size` set on `html`.
+- `src/assets/`: the web and spider artwork.
+- `index.html`: meta tags, favicons and the Google Fonts link (Lora and Shadows Into Light).
+- `public/`: favicons.
+
+## TODO
+
+- The "submit your project" button in `App.vue` is a placeholder (`href=""`).
