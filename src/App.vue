@@ -68,6 +68,7 @@ import spiderArt from './assets/spider.webp'
 
 <style>
 html {
+    font-family: "Shadows Into Light Two", cursive;
   /* everything below is in rem, so this one value scales the whole page:
      16px on phones, growing with viewport width up to 20px on big monitors */
   font-size: clamp(16px, 0.35vw + 12px, 20px);
@@ -82,7 +83,7 @@ body {
   /* Lora for body copy: real 400-700 range, so font-weight:bold is a true
      bold. Shadows Into Light is single-weight and only legible at display
      sizes, so it's reserved for the h1 below. */
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
   margin: 0;
   overflow-x: clip;
 }
@@ -123,7 +124,7 @@ body {
   display: inline-block;
 }
 h1 {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Shadows Into Light Two", cursive;
   font-size: 3.5rem;
   letter-spacing: 0.125em;
   margin: 0;
@@ -131,7 +132,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Shadows Into Light Two", cursive;
   line-height: 1.2;
 }
 
