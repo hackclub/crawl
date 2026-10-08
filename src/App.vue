@@ -27,15 +27,21 @@ import spiderArt from './assets/spider.webp'
 
     <hr />
 
+    <p>Spend <strong>2 or more hours</strong> coding your very own web crawler, and get a <strong>$10</strong> to spend on a video game (or several) from Steam or Itch.io!</p>
+    
     <h2>requirements</h2>
+    
+    <ul>
+      <li>It looks at a page's HTML and extracts itsy bitsy data points. That's it!</li>
+      <li>Any website works, so pick your favorite</li>
+    </ul>
 
-    <p>
-      Spend two or more hours coding your own web crawler, get $10 to buy a video game (or multiple) of your choice from Steam or Itch.io!
-    </p>
+    <h2>ideas</h2>
 
-    <p>
-      Your web crawler needs to be able to look at HTML and output itsy bitsy data points, it's that simple! Choose any website you like, and try to get something from it. You could extract the links from a Wikipedia page and do something with them, or even make a web crawler that moves between pages!
-    </p>
+    <ul>
+      <li>Grab every link on a Wikipedia article and do something fun with them</li>
+      <li>Make a crawler that traverses the internet autonomously by following links</li>
+    </ul>
 
     <p>
       Any questions? Join <a href="https://hackclub.enterprise.slack.com/archives/C0C7N079Z2Q">#crawl</a> and <a href="https://hackclub.enterprise.slack.com/archives/C0C8CLLC6DN">#crawl-help</a> on the Slack!
@@ -63,8 +69,12 @@ import spiderArt from './assets/spider.webp'
 <style>
 html {
   /* everything below is in rem, so this one value scales the whole page:
-     16px on phones, growing with viewport width up to ~26px on big monitors */
-  font-size: clamp(16px, 0.6vw + 12px, 26px);
+     16px on phones, growing with viewport width up to 20px on big monitors */
+  font-size: clamp(16px, 0.35vw + 12px, 20px);
+  /* the corner webs and spider can poke past the viewport on narrow
+     screens; clip them so there's no sideways scroll. Set on html too
+     because mobile Safari ignores overflow on body alone */
+  overflow-x: clip;
 }
 body {
   background: #14100b;
@@ -74,9 +84,7 @@ body {
      sizes, so it's reserved for the h1 below. */
   font-family: "Lora", serif;
   margin: 0;
-  /* the corner webs and spider can poke past the viewport on narrow
-     screens; clip them so there's no sideways scrollbar */
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .page {
   max-width: 35rem;
@@ -86,7 +94,7 @@ body {
 :root {
   /* base size of web1 (512px source); web2 is the same art at 1024px,
      so it renders at 2x this to appear identically sized */
-  --web-size: clamp(8rem, 16vw, 20rem);
+  --web-size: clamp(7rem, 14vw, 16rem);
   /* spider is a 256px source. Equal drawing scale with the 512px web1 would
      be 0.5; trimmed to 0.52 so the spider reads as a smaller accent. Change
      this one number to resize it and it stays tied to --web-size. */
@@ -116,7 +124,7 @@ body {
 }
 h1 {
   font-family: "Shadows Into Light", cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   letter-spacing: 0.125em;
   margin: 0;
   color: #ff8c1a;
@@ -139,6 +147,9 @@ h2 {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -webkit-user-drag: none;
+}
+li::marker {
+  color: #ff8c1a;
 }
 .tag {
   font-weight: bold;
