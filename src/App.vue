@@ -27,13 +27,14 @@ import spiderArt from './assets/spider.webp'
 
     <hr />
 
-    <p>Spend <strong>2 or more hours</strong> coding your very own web crawler, and get <strong>$10</strong> to spend on a video game (or several) from Steam or Itch.io!</p>
+    <p>Take just <strong>2 or more hours</strong> coding your very own web crawler and get <strong>$10</strong> to spend on a video game (or several) from Steam or Itch.io!</p> If you chose to spend <strong>6 hours</strong> on your crawler, we'll give you the choice between <strong>Minecraft</strong> or a <strong>$30 video game grant</strong>!
     
     <h2>requirements</h2>
     
     <ul>
       <li>It looks at a page's HTML and extracts itsy bitsy data points. That's it!</li>
       <li>Any website works, so pick your favorite</li>
+      <li>It (obviously) adheres to Hack Club's CoC</li>
     </ul>
 
     <h2>ideas</h2>
