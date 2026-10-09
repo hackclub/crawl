@@ -34,7 +34,7 @@ import spiderArt from './assets/spider.webp'
     <ul>
       <li>It looks at a page's HTML and extracts itsy bitsy data points. That's it!</li>
       <li>Any website works, so pick your favorite</li>
-      <li>It (obviously) adheres to Hack Club's CoC</li>
+      <li>It (obviously) adheres to <a href="https://hackclub.com/conduct">Hack Club's CoC</a></li>
     </ul>
 
     <h2>ideas</h2>
