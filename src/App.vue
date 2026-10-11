@@ -52,6 +52,8 @@ import spiderArt from './assets/spider.webp'
       Any questions? Join <a href="https://hackclub.enterprise.slack.com/archives/C0C7N079Z2Q">#crawl</a> and <a href="https://hackclub.enterprise.slack.com/archives/C0C8CLLC6DN">#crawl-help</a> on the Slack!
     </p>
 
+    <h3>FYI: the YSWS is no longer accepting submissions. Thank you to any participants!</h3>
+
     <p>
       <a href="https://forms.hackclub.com/t/pqMvL6JyMHus" class="cta">submit your project</a>
     </p>
